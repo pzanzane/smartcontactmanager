@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <style>
-        .container{
-            margin:auto;
-            width:50%;
-            padding:30px;
-            background:#e2e2e2;
-        }
-    </style>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body>
-<div class="container">
-    <h1 data-th-text="${name}">Welcome to homepage.</h1>
+<div class="bg-gray-400 w-1/2 p-4 mx-auto flex flex-col justify-center">
+    <h1 class="text-2 font-bold" data-th-text="${name}">Welcome to homepage.</h1>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate eius, minima neque officia omnis
         quibusdam rerum tempore ut voluptatibus. Alias beatae consectetur delectus eos iusto magnam nostrum quasi
         voluptatem! </p>
+    <button class="px-3 py-3 bg-blue-700 text-white hover:bg-blue-500">Click Here</button>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 </body>
 </html>
